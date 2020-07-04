@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+    <title>Covid-19 Predictor</title>
+        <img src="/static/test.jpg">
+                                            <link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
+                                            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+                                            <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+                                            <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+                                     
+                                     
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+ 
+ 
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Harsha  Corona Patient Prediction </title>
+  </head>
+  <body>
+    
+<!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Covid-19  Predictor</span></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    			</b><br>
+    			</b><br>
+    			</p>Developed by Harsha Teja Bolla.</p>
+    			<br>
+    			<br>
+    			
+    		</div>
+    	</div>
+
+       
+<!------ Include the above in your HEAD tag ---------->
+
+<section class="testimonial py-5" id="testimonial">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 py-5 bg-primary text-white text-center ">
+                <div class=" ">
+                    <div class="card-body">
+                        <img src="https://cdn.pixabay.com/photo/2020/02/26/11/47/smilie-4881520_960_720.png" style="width:30%">
+                        <h2 class="py-3">Corona Patient Prediction</h2>
+                        <p>
+                            <b> This is project is bulid is only for my machine learing pratice.</b><br>
+                            Dont consider this results are final results,smaple DATASET TAKEN FOR PREDICATION <br>
+                            contact me : harshabolla@gmail.com<br>
+                            website: <a href="#" style="color: white;">linkedin.com/in/bolla-harsha-teja-goud-b24b8b25</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 py-5 border">
+                <p></p>
+                <h4 class="pb-4">Please fill your details</h4>
+                 <h4 class="pb-4">Enter the values below</h4>
+               
+                <form action='/predict' method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input id="Age" name="Age"  placeholder="Enter your Age (Eg: 20)." class="form-control" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" id="Fever" placeholder="Enter Fever (Eg: 98)" name='Fever' required>
+                        </div>
+                      </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                                  
+                            <select id="inputState" class="form-control" name='RunnyNose' required>
+                              <option selected>Have you cold..?</option>
+                              <option value='1'> YES</option>
+                              <option value='0'> NO</option>
+                              
+                            </select>
+                         </div>
+
+                        <div class="form-group col-md-6">
+                                  
+                                  <select id="inputState" class="form-control" name='BodyPains' required>
+                                    <option selected>Have you Body Pains..?</option>
+                                    <option value='1'> YES</option>
+                                    <option value='0'> NO</option>
+                                  </select>
+                                </div>     
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                                  
+                            <select id="inputState" class="form-control" name='Difficulty_in_Breath' required>
+                              <option selected >Have you difficulty when you take breath..?</option>
+                              <option value='1' > YES</option>
+                              <option value='0'> NO</option>
+                              
+                            </select>
+                         </div>
+
+                        
+                    </div>
+                  <input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+
+ <!-- Footer -->
+        <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/harshabolla/covid-19-patinet-prediction"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://linkedin.com/in/bolla-harsha-teja-goud-b24b8b25"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made by Harsha Teja Bolla.</p>
+       </div>
+      
+  
+	</body>
+</html>
+
+</section>
+
+
+<style>
+    img {
+        width:100%;
+    }
+</style>
+
+      <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+          <small>Copyright &copy; Corona Patient Prediction @harsha</small>
+        </div>
+      </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
